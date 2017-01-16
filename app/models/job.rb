@@ -1,4 +1,5 @@
 class Job < ApplicationRecord
+  has_many :resumes
   validates :title, presence: true
   validates :wage_upper_bound, presence: true
   validates :wage_lower_bound, numericality: { greater_than: 0}
@@ -11,5 +12,5 @@ class Job < ApplicationRecord
     self.save
   end
   scope :published, -> { where(is_hidden: false) }
-  scope :rencent, ->{ order('created_at DESC') }
+  scope :recent, ->{ order('created_at DESC') }
 end

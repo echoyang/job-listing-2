@@ -1,3 +1,59 @@
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+ </ol>
+ <div class="carousel-inner">
+    <div class="item active">
+     <a href="#">
+      <img src="http://p1.bpimg.com/567571/fd72c11ef825c8f6.jpg" alt="First slide">
+      <div class="carousel-caption"></div>
+     </a>
+    </div>
+    <div class="item">
+     <a href="#">
+      <img src="http://i1.piimg.com/567571/7c519c9cea497e9a.png" alt="Second slide">
+      <div class="carousel-caption"></div>
+     </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <img src="http://i1.piimg.com/567571/d7756319a56695c9.png" alt="Third slide">
+        <div class="carousel-caption"></div>
+      </a>
+    </div>
+  </div>
+
+ <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+   <span class="glyphicon glyphicon-chevron-left"></span>
+ </a>
+ <a class="carousel-control right" href="#myCarousel" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right"></span>
+ </a>
+</div>
+
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li class="">
+      <a data-toggle="tab" href="#category-0">产品</a>
+    </li>
+    <li class="active">
+      <a data-toggle="tab" href="#category-1">技术</a>
+    </li>
+    <li class="">
+      <a data-toggle="tab" href="#category-3">设计</a>
+    </li>
+    <li class="">
+      <a data-toggle="tab" href="#category-4">运营</a>
+    </li>
+    <li class="">
+      <a data-toggle="tab" href="#category-5">市场与销售</a>
+    </li>
+    <li class="">
+      <a data-toggle="tab" href="#category-7">职能</a>
+    </li>
+  </ul>
+
 <div class="pull-right">
   <%= link_to("Add a job", new_job_path, :class => "btn btn-default" ) %>
 </div>

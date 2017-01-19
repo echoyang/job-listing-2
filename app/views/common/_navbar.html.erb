@@ -3,12 +3,25 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <a class="navbar-brand" href="/"><i class="fa fa-empire" aria-hidden="true"></i> Calling X </a>
+            <ul class="nav navbar-nav">
+              <li><a href="#">职位</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
 
+            <ul class="nav navbar-nav navbar-right">
               <% if !current_user %>
               <li><%= link_to("注册", new_user_registration_path) %> </li>
               <li><%= link_to(content_tag(:i, '登入', class: 'fa fa-sign-in'), new_user_session_path) %></li>

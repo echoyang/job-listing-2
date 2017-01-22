@@ -51,6 +51,9 @@ class JobsController < ApplicationController
     @job.destroy
     redirect_to jobs_path
   end
+  def search
+    @jobs = Job.search(params[:search])
+  end
 
   private
   def job_params

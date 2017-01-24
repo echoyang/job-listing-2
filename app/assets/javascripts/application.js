@@ -17,8 +17,5 @@
 //= require bootstrap/dropdown
 //= require bootstrap/tab
 //= require bootstrap/carousel
-$(document).ready(function() {
-  $('#myCarousel').carousel({interval: 2000});
-
-});
+//= require bootstrap/modal
 //= require_tree .
